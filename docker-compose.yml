@@ -13,8 +13,8 @@ services:
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready -U admin -d db_api" ]
       interval: 10s
-      timeout: 5s
-      retries: 5
+      timeout: 10s
+      retries: 10
 
 volumes:
   postgres_data:
